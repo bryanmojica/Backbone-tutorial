@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style>
+  body {
+    background-color: #999;
+    color: #eee;
+    text-shadow: 2px 1px black;
+  }
+  .character-title {
+    font-size: 24px;
+    color: #fff;
+    text-shadow: 4px 2px #be5555;
+    margin-right: 100px;
+  }
+  .charPic {
+    border-radius: 50px;
+    height: 240px;
+    width: 200px;
+  }
+  .names {
+    margin-left: 120px;
+  }
+  </style>
+  <!-- libraries imported in specific order because Backbone has dependencies -->
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/underscore/underscore-min.js"></script>
+  <script src="node_modules/backbone/backbone-min.js"></script>
+</head>
+<body>
+  <!-- js files imported from child models to main app -->
+  <script src="views/charView.js"></script>
+  <script src="views/characters-view.js"></script>
+  <script src="models/characterModel.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
